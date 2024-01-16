@@ -8,7 +8,8 @@
     rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Structboost</title>,
+  <title>Structboost</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/typography.css">
@@ -42,7 +43,7 @@
 
   <section class="s-hero">
     <div class="container">
-      <div class="text">
+      <div class="text" data-aos="fade-right">
         <h1>Front-end descomplicado e direto ao ponto!</h1>
         <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos
           altamente renomados.</p>
@@ -53,15 +54,15 @@
       </div>
     </div>
 
-    <img src="./imgs/ilustra-hero.svg" alt="Foto principal" class="ilustra">
+    <img src="./imgs/ilustra-hero.svg" alt="Foto principal" class="ilustra" data-aos="fade-up" data-aos-delay="200">
     <img src="./imgs/ilustra-mobile.svg" class="ilustra-mobile" alt="Foto mobile">
   </section>
 
   <section class="s-digital">
     <div class="container">
-      <h3>Transformando Ideias em Realidade Digital!</h3>
+      <h3 data-aos="fade-right">Transformando Ideias em Realidade Digital!</h3>
       <ul>
-        <li>
+        <li data-aos="fade-right">
           <div class="item-digital">
             <div class="icon">
               <img src="./imgs/icon-impacto.svg" alt="">
@@ -72,7 +73,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <div class="item-digital">
             <div class="icon">
               <img src="./imgs/icon-nav.svg" alt="">
@@ -85,7 +86,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li data-aos="fade-left">
           <div class="item-digital">
             <div class="icon">
               <img src="./imgs/icon-performance.svg" alt="">
@@ -104,16 +105,17 @@
   <section class="s-art-front">
     <div class="container">
       <div class="title-text">
-        <div class="left">
+        <div class="left" data-aos="fade-right">
           <h3>Domine a Arte da Front-end</h3>
           <p>Prepare-se para criar interfaces incríveis e funcionais para a web com este curso completo de front-end.
           </p>
         </div>
-        <p>Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se tornar um desenvolvedor
+        <p data-aos="fade-left">Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se
+          tornar um desenvolvedor
           web altamente qualificado.</p>
       </div>
       <div class="all">
-        <div class="card-post">
+        <div class="card-post" data-aos="flip-left">
           <span class="tag">Fundamentos</span>
           <div class="image">
             <img src="./imgs/image-post.svg" alt="">
@@ -124,7 +126,7 @@
               mecanismos de busca.</p>
           </div>
         </div>
-        <div class="card-post">
+        <div class="card-post" data-aos="flip-left">
           <span class="tag">Estilizando</span>
           <div class="image">
             <img src="./imgs/image-post.svg" alt="">
@@ -135,7 +137,7 @@
               atrativos.</p>
           </div>
         </div>
-        <div class="card-post">
+        <div class="card-post" data-aos="flip-left">
           <span class="tag">Potencializando</span>
           <div class="image">
             <img src="./imgs/image-post.svg" alt="">
@@ -146,7 +148,7 @@
               uma experiência única.</p>
           </div>
         </div>
-        <div class="card-post">
+        <div class="card-post" data-aos="flip-left">
           <span class="tag">Aplicações</span>
           <div class="image">
             <img src="./imgs/image-post.svg" alt="">
@@ -157,7 +159,7 @@
               completas e eficientes.</p>
           </div>
         </div>
-        <div class="card-post">
+        <div class="card-post" data-aos="flip-left">
           <span class="tag">Designs</span>
           <div class="image">
             <img src="./imgs/image-post.svg" alt="">
@@ -173,7 +175,7 @@
   </section>
 
   <section class="s-newsletter">
-    <div class="container">
+    <div class="container" data-aos="zoom-out">
       <h2>Front-end descomplicado e direto ao ponto!</h2>
       <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos
         altamente renomados.</p>
@@ -230,6 +232,13 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      disable: 'mobile'
+    });
+  </script>
 </body>
 
 </html>
